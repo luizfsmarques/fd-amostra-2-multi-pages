@@ -6,7 +6,8 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
-        <link rel="icon" href="{{ asset('img/marca/icon.ico') }}" type="image/x-icon">
+        <!-- <link rel="icon" href="{{ asset('img/marca/icon.ico') }}" type="image/x-icon"> -->
+         <link rel="icon" href="{{ asset('img/marca/icon-geral-black.png') }}">
         <title>Fronteira Digital</title>
 
         <style>
@@ -88,44 +89,37 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             @if($page=='home')
-                            <a class="nav-link" style="color:#FF601A;" href="/">Home</a>
+                            <a class="nav-link" href="/">Início</a>
                             @else
-                            <a class="nav-link" href="/">Home</a>
+                            <a class="nav-link" href="/">Início</a>
                             @endif
                         </li>
                         <li class="nav-item">
                             @if($page=='sobre')
-                            <a class="nav-link" style="color:#FF601A;" href="/sobre">Sobre nós</a>
+                            <a class="nav-link" style="color:#FFFFFF;" href="#sobre-nos">Sobre nós</a>
                             @else
-                            <a class="nav-link" href="/sobre">Sobre nós</a>
+                            <a class="nav-link" href="#sobre-nos">Sobre nós</a>
                             @endif
                         </li>
                         <li class="nav-item">
                             @if($page=='servicos')
-                            <a class="nav-link" style="color:#FF601A;" href="/servicos">Serviços</a>
+                            <a class="nav-link" style="color:#FFFFFF;" href="#servicos">Serviços</a>
                             @else
-                            <a class="nav-link" href="/servicos">Serviços</a>
-                            @endif
-                        </li>
-                        <li class="nav-item">
-                            @if($page=='planos')
-                            <a class="nav-link" style="color:#FF601A;" href="/planos/#planos_marketing">Planos</a>
-                            @else
-                            <a class="nav-link" href="/planos/#planos_marketing">Planos</a>
+                            <a class="nav-link" href="#servicos">Serviços</a>
                             @endif
                         </li>
                         <li class="nav-item">
                             @if($page=='contato')
-                            <a class="nav-link" style="color:#FF601A;" href="/contato">Contato</a>
+                            <a class="nav-link" style="color:#FFFFFF;" href="#contato">Contato</a>
                             @else
-                            <a class="nav-link" href="/contato">Contato</a>
+                            <a class="nav-link" href="#contato">Contato</a>
                             @endif
                         </li>
                     </ul>
                 </div>
-                <div id="navbar-contato">
+                <!-- <div id="navbar-contato">
                     <a id="navbar-btn-contato" href="/contato">Entre em contato</a>
-                </div>
+                </div> -->
             </div>
         </nav>
 
