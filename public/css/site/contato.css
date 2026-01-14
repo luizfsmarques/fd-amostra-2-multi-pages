@@ -2,19 +2,19 @@ body{
     overflow-x: hidden;
 }
 
-/* 
+/*
     Navbar
 */
-.navbar{
-    height: 100px;
-    background-color: #FFFFFF;
+#navbar{
+    height: 70px;
+    background-color: #000000;
     box-shadow: 2px 2px 7px #DCDCDC;
     top: 0;
 }
 
 .vazio{
     width: 100%;
-    height: 100px;
+    height: 70px;
 }
 
 /* 
@@ -29,7 +29,7 @@ body{
 
 .titulo-pagina h1{
     font-family: BeVietnamPro-bold;
-    color: #074058;
+    color: #000000;
     font-size: 2rem;
     text-align: center;
 }
@@ -122,12 +122,11 @@ textarea{
 }
 
 
-
 @media screen and (max-width:800px){
 
     .vazio{
         display: inline-block;
-        height: 100px;
+        height: 70px;
     }
 
     /* 
@@ -142,10 +141,18 @@ textarea{
         font-size: 1.1rem;
     }
 
+    /* 
+        Nossa localização
+    */
+
+    #mapa{
+        height: 300px;
+    }
+
 }
 
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
 
     .links-contato{
         padding: unset;
