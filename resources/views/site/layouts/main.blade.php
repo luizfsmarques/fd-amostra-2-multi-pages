@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+        <link rel="icon" href="{{ asset('img/marca/icon.ico') }}" type="image/x-icon">
+        <title>Fronteira Digital</title>
+
+        <style>
+             @font-face {
+            font-family: BeVietnamPro-light;
+            src: url('{{asset('fonts/Be_Vietnam_Pro/BeVietnamPro-Light.ttf')}}')format('opentype');
+            }
+            @font-face {
+            font-family: BeVietnamPro-regular;
+            src: url('{{asset('fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf')}}')format('opentype');
+            }
+            @font-face {
+            font-family: BeVietnamPro-medium;
+            src: url('{{asset('fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf')}}')format('opentype');
+            }
+            @font-face {
+            font-family: BeVietnamPro-semiBold;
+            src: url('{{asset('fonts/Be_Vietnam_Pro/BeVietnamPro-SemiBold.ttf')}}')format('opentype');
+            }
+            @font-face {
+            font-family: BeVietnamPro-bold;
+            src: url('{{asset('fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf')}}')format('opentype');
+            }
+        </style>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+        <link rel="stylesheet" href="{{asset('css/site/layouts/main.css')}}" type="text/css">
+        <link href="{{asset('css/site/layouts/componentes/btn_whatsapp.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('css/site/layouts/msg_usuario.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('css/site/layouts/msg_erro_form.css')}}" rel="stylesheet" type="text/css">
+        <link href="@yield('style')" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+    @if($page=='home')
+        <div class="container-fluid fixed-top" id="box-info-icons">
+            <div class="row">
+                <div class="col-2 info-icons">
+                    <div>
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <p class="texto-icons">Ananindeua - PA - Brasil</p>
+                </div>
+                <div class="col-8 info-icons">
+                    <div>
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <p class="texto-icons">fronteiradigitalsac@gmail.com</p>
+                </div>
+                <div class="col-2 info-icons">
+                    <p class='last-p-info-icons'>Redes sociais:</p>
+                    <div>
+                        <!-- <a class="icons-redes" href="">
+                            <i class="bi bi-linkedin"></i>
+                        </a> -->
+                        <a class="icons-redes" target="_blank" href="https://www.facebook.com/share/1Bs8xvqeFQ/?mibextid=wwXIfr">
+                            <i class="bi bi-facebook"></i>  
+                        </a>
+                        <a class="icons-redes" target="_blank" href="https://www.instagram.com/fronteiradigitalfd?igsh=NTJkNmxub3duaGl4&utm_source=qr">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        @endif
+
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="{{asset('img/marca/marca-site.svg')}}" alt="marca">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            @if($page=='home')
+                            <a class="nav-link" style="color:#FF601A;" href="/">Home</a>
+                            @else
+                            <a class="nav-link" href="/">Home</a>
+                            @endif
+                        </li>
+                        <li class="nav-item">
+                            @if($page=='sobre')
+                            <a class="nav-link" style="color:#FF601A;" href="/sobre">Sobre nós</a>
+                            @else
+                            <a class="nav-link" href="/sobre">Sobre nós</a>
+                            @endif
+                        </li>
+                        <li class="nav-item">
+                            @if($page=='servicos')
+                            <a class="nav-link" style="color:#FF601A;" href="/servicos">Serviços</a>
+                            @else
+                            <a class="nav-link" href="/servicos">Serviços</a>
+                            @endif
+                        </li>
+                        <li class="nav-item">
+                            @if($page=='planos')
+                            <a class="nav-link" style="color:#FF601A;" href="/planos/#planos_marketing">Planos</a>
+                            @else
+                            <a class="nav-link" href="/planos/#planos_marketing">Planos</a>
+                            @endif
+                        </li>
+                        <li class="nav-item">
+                            @if($page=='contato')
+                            <a class="nav-link" style="color:#FF601A;" href="/contato">Contato</a>
+                            @else
+                            <a class="nav-link" href="/contato">Contato</a>
+                            @endif
+                        </li>
+                    </ul>
+                </div>
+                <div id="navbar-contato">
+                    <a id="navbar-btn-contato" href="/contato">Entre em contato</a>
+                </div>
+            </div>
+        </nav>
+
+        @if($page=='home')
+        <script>
+            const larguraJanela = window.innerWidth;
+
+            if(larguraJanela>=1200){
+                let menuRolagem = document.querySelector('#navbar');
+
+                window.addEventListener("scroll", function(){
+                    menuRolagem.classList.toggle('rolagem',window.scrollY>100);
+                });
+
+                let boxInfoIconsRolagem = document.querySelector('#box-info-icons');
+
+                window.addEventListener("scroll", function(){
+                    boxInfoIconsRolagem.classList.toggle('rolagem',window.scrollY>100);
+                });
+            }
+            
+        </script>
+        @endif
+
+        <!-- 
+            Mensagens para o usuário
+        -->
+        @if(session('msg'))
+        <div class="alert alert-success fixed-top" id="sucesso-mensagem" role="alert">
+            <p class="flex-grow-1">{{session('msg')}}</p>
+            <i class="bi bi-x-lg" id="fechar-mensagem-sucesso"></i>
+        </div>
+        <script>
+            let fecharMensgemSucesso = document.querySelector("#fechar-mensagem-sucesso");
+            let sucessoMensagem = document.querySelector("#sucesso-mensagem");
+
+
+            fecharMensgemSucesso.addEventListener('click', ()=>{
+
+                sucessoMensagem.style.display = "none"
+
+            });
+        </script>
+        @endif
+
+        @if(session('msg_erro'))
+        <div class="alert alert-danger fixed-top" id="sucesso-mensagem" role="alert">
+            <p class="flex-grow-1">{{session('msg_erro')}}</p>
+            <i class="bi bi-x-lg" id="fechar-mensagem-sucesso"></i>
+        </div>
+        <script>
+            let fecharMensgemSucesso = document.querySelector("#fechar-mensagem-sucesso");
+            let sucessoMensagem = document.querySelector("#sucesso-mensagem");
+
+
+            fecharMensgemSucesso.addEventListener('click', ()=>{
+
+                sucessoMensagem.style.display = "none"
+
+            });
+        </script>
+        @endif
+
+        @if ($errors->any())
+            <div class="alert alert-danger fixed-top" id="erro-form">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+                <i class="bi bi-x-lg" id="fechar-erro-form"></i>
+            </div>
+            <script>
+            let fecharErroForm = document.querySelector("#fechar-erro-form");
+            let erroForm = document.querySelector("#erro-form");
+
+            fecharErroForm.addEventListener('click', ()=>{
+
+                erroForm.style.display = "none"
+
+            });
+        </script>
+        @endif
+
+        @yield('content')
+
+        @extends('site.layouts.componentes.btn_whatsapp')
+
+        <footer class="container-fluid">
+
+            <div class="row" id="footer-part1">
+                <div class="col-4" id="footer-col1">
+                    <img src="{{asset('img/marca/marca-rodape.png')}}" alt="marca no rodapé">
+                    <p>
+                        Desenvolvemos sistemas e serviços digitais personalizados para a sua empresa.
+                    </p>
+                    <div>
+                        <!-- <a class="footer-icons-redes" href="">
+                            <i class="bi bi-linkedin"></i>
+                        </a> -->
+                        <a class="footer-icons-redes" target="_blank" href="https://www.facebook.com/share/1Bs8xvqeFQ/?mibextid=wwXIfr">
+                            <i class="bi bi-facebook"></i>  
+                        </a>
+                        <a class="footer-icons-redes" target="_blank" href="https://www.instagram.com/fronteiradigitalfd?igsh=NTJkNmxub3duaGl4&utm_source=qr">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4" id="footer-col2">
+                    <h3>Endereço</h3>
+                    <div class="footer-contato">
+                        <div>
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <a href="#footer" class="texto-icons">Ananindeua - PA - Brasil</a>
+                    </div>
+                    <div class="footer-contato">
+                        <div>
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <a href="mailto:fronteiradigitalsac@gmail.com" target="_blank" class="texto-icons">fronteiradigitalsac@gmail.com</a>
+                    </div>
+                    <div class="footer-contato">
+                        <div>
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <a href="https://api.whatsapp.com/send?phone=5522997040207" target="_blank" class="texto-icons">(22) 99704-0207</a>
+                    </div>
+                </div>
+                <div class="col-4" id="footer-col3">
+                    <h3>Links</h3>
+                    <div class="footer-links">
+                        <div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <a href="/" class="">Home</a>
+                    </div>
+                    <div class="footer-links">
+                        <div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <a href="/sobre" class="">Sobre nós</a>
+                    </div>
+                    <div class="footer-links">
+                        <div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <a href="/servicos" class="">Serviços</a>
+                    </div>
+                    <div class="footer-links">
+                        <div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <a href="/planos" class="">Planos</a>
+                    </div>
+                    <div class="footer-links">
+                        <div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <a href="/contato" class="">Contato</a>
+                    </div>
+                    <div class="footer-links">
+                        <div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <a href="/politica_de_privacidade" class="">Política de privacidade</a>
+                    </div>
+                    <div class="footer-links">
+                        <div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <a target="_blank" href="/panfleto" class="">Panfleto digital</a>
+                    </div>
+                    <div class="footer-links">
+                        <div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <a target="_blank" href="https://amostra1.fronteiradigital.com" class="">Amostra 1</a>
+                    </div>
+                    <div class="footer-links">
+                        <div>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                        <a target="_blank" href="https://amostra2.fronteiradigital.com" class="">Amostra 2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="footer-linha">
+
+            </div>
+            <div class="row" id="footer-part2">
+                <p><i class="bi bi-c-circle"></i> Designed by Fronteira Digital, All Right Reserved</p>
+            </div>
+
+        </footer>
+
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</html>

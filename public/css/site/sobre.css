@@ -1,0 +1,292 @@
+/*
+    Navbar
+*/
+.navbar{
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 7px #DCDCDC;
+    top: 0;
+}
+
+.vazio{
+    width: 100%;
+    height: 100px;
+}
+
+/*
+    sobre nos
+*/
+
+#sobre-nos{
+    margin-top: 60px;
+}
+
+#img-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-sobre img{
+    width: 70%;
+    height: 90%;
+}
+
+#info-sobre{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#info-sobre h1, #info-sobre h2{
+    font-family: BeVietnamPro-bold;
+    font-size: 2rem;
+    color: #074058;  
+    margin-bottom: 20px;
+}
+
+#info-sobre h1{
+    text-align: center;
+}
+
+#info-sobre p{
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* 
+    Missão, visão e valores
+*/
+
+#missao, #visao, #valores{
+    margin-top: 70px;
+}
+
+#missao h1, #visao h1, #valores h1{
+    font-family: BeVietnamPro-bold;
+    font-size: 2rem;
+    color: #074058;  
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#missao p, #visao p, #valores p{
+    font-size: 1.2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#valores div p{
+    text-align: start;
+}
+
+#valores div p span{
+   font-weight: bold;
+}
+
+/*
+    cta - contato
+*/
+
+.cta-contato{
+    width: 100%;
+    height: 400px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+.cta-contato div{
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-contato div h3{
+    font-family: BeVietnamPro-medium;
+    font-size: 1.8rem;
+    color:#FFFFFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cta-contato div a{
+    all:unset;
+    text-decoration:unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: BeVietnamPro-medium;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #FF601A;
+    border-radius: 5rem;
+    width:250px;
+    height: 60px;
+}
+
+.cta-contato div a:hover{
+    cursor:pointer;
+    border: unset;
+    scale: 1.01;
+}
+
+@media screen and (max-width:1200px){
+
+    .vazio{
+        display: inline-block;
+        height: 70px;
+    }
+    
+    /*
+        sobre nos
+    */
+
+    #sobre-nos{
+        margin-top: 40px;
+    }
+
+    #img-sobre{
+        width: 100%;
+    }
+
+    #img-sobre img{
+        width: 50%;
+        height: 80%;
+    }
+
+    #info-sobre{
+        width: 100%;
+    }
+    
+    /*
+        cta - contato
+    */
+
+    .cta-contato{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-contato div{
+        padding-top: unset;
+        padding-right: 5%;
+    }
+
+    .cta-contato div h3{
+        font-size: 1.6rem;
+    }
+
+
+}
+
+
+@media screen and (max-width:800px){
+
+    .vazio{
+        display: inline-block;
+        height: 100px;
+    }
+
+    /*
+        sobre nos
+    */
+
+    #info-sobre h1, #info-sobre h2{
+        font-size: 1.5rem;
+    }
+
+    #info-sobre h2, #info-sobre p{
+        text-align: center;
+    }
+
+    #img-sobre{
+        margin-bottom: 40px;
+    }
+
+    #img-sobre img{
+        width: 80%;
+        height: 80%;
+    }
+
+    #missao p, #visao p, #valores p{
+        text-align: center;
+    }
+
+    #valores div p{
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width:500px){
+
+    /*
+        sobre nos
+    */
+
+    #img-sobre{
+        margin-bottom: 70px;
+    }
+
+    #img-sobre{
+        margin-bottom: 50px;
+    }
+
+    #btns-sobre{
+        display: inline-block;
+        justify-items: center;
+        width: 100%;
+    }
+
+    #btns-sobre div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: unset;
+        padding: unset;
+    }
+
+    #btns-sobre div:last-child a{
+        width: 100%;
+        margin: auto;
+        position: relative;
+        top:20px;
+
+    }
+    
+    #btns-sobre a{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    /* 
+        servicos
+    */
+
+    .card{
+        width: 90%;
+    }
+
+    /*
+        cta - contato
+    */
+
+    .cta-contato div h3{
+        font-size: 1.3rem;
+    }
+
+
+    
+
+    
+}
+

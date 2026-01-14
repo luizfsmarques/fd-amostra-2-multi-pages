@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-fluid,body{
+    padding: unset;
+    background-color: #074058;
+}
+
+.box-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: unset;
+}
+
+.box-img img{
+    width: 80%;
+    height: 600px;
+}
+
+
+@media screen and (max-width:800px){
+
+    .box-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        width: 100%;
+        padding: unset;
+    }
+
+    .box-img img{
+        width: 100%;
+        height: 90%;
+    }
+
+}
