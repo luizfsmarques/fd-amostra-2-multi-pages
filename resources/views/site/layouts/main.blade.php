@@ -89,30 +89,35 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             @if($page=='home')
-                            <a class="nav-link" href="/">Início</a>
+                            <a class="nav-link nav-link-home" href="/">Início</a>
+                            <style>
+                                .nav-link-home.rolagem{
+                                    color:#FF601A;
+                                }
+                            </style>
                             @else
                             <a class="nav-link" href="/">Início</a>
                             @endif
                         </li>
                         <li class="nav-item">
                             @if($page=='sobre')
-                            <a class="nav-link" style="color:#FFFFFF;" href="#sobre-nos">Sobre nós</a>
+                            <a class="nav-link" style="color:#FF601A;" href="/sobre">Sobre nós</a>
                             @else
-                            <a class="nav-link" href="#sobre-nos">Sobre nós</a>
+                            <a class="nav-link" href="/sobre">Sobre nós</a>
                             @endif
                         </li>
                         <li class="nav-item">
                             @if($page=='servicos')
-                            <a class="nav-link" style="color:#FFFFFF;" href="#servicos">Serviços</a>
+                            <a class="nav-link" style="color:#FF601A;" href="/servicos">Serviços</a>
                             @else
-                            <a class="nav-link" href="#servicos">Serviços</a>
+                            <a class="nav-link" href="/servicos">Serviços</a>
                             @endif
                         </li>
                         <li class="nav-item">
                             @if($page=='contato')
-                            <a class="nav-link" style="color:#FFFFFF;" href="#contato">Contato</a>
+                            <a class="nav-link" style="color:#FF601A;" href="/contato">Contato</a>
                             @else
-                            <a class="nav-link" href="#contato">Contato</a>
+                            <a class="nav-link" href="/contato">Contato</a>
                             @endif
                         </li>
                     </ul>
@@ -139,12 +144,18 @@
                 window.addEventListener("scroll", function(){
                     boxInfoIconsRolagem.classList.toggle('rolagem',window.scrollY>100);
                 });
+
+                let linkHomeRolagem = document.querySelector('.nav-link-home');
+
+                window.addEventListener("scroll", function(){
+                    linkHomeRolagem.classList.toggle('rolagem',window.scrollY>100);
+                });
             }
             
         </script>
         @endif
 
-        <!-- 
+        <!--
             Mensagens para o usuário
         -->
         @if(session('msg'))
@@ -212,9 +223,9 @@
 
             <div class="row" id="footer-part1">
                 <div class="col-4" id="footer-col1">
-                    <img src="{{asset('img/marca/marca-rodape.png')}}" alt="marca no rodapé">
+                    <!-- <img src="{{asset('img/marca/marca-site.svg')}}" alt="marca no rodapé"> -->
                     <p>
-                        Desenvolvemos sistemas e serviços digitais personalizados para a sua empresa.
+                        Desenvolvemos soluções jurídicas eficientes e personalizadas para a sua empresa.
                     </p>
                     <div>
                         <!-- <a class="footer-icons-redes" href="">
@@ -240,13 +251,13 @@
                         <div>
                             <i class="bi bi-envelope"></i>
                         </div>
-                        <a href="mailto:fronteiradigitalsac@gmail.com" target="_blank" class="texto-icons">fronteiradigitalsac@gmail.com</a>
+                        <a href="#" target="_blank" class="texto-icons">exemplo@gmail.com</a>
                     </div>
                     <div class="footer-contato">
                         <div>
                             <i class="bi bi-telephone"></i>
                         </div>
-                        <a href="https://api.whatsapp.com/send?phone=5522997040207" target="_blank" class="texto-icons">(22) 99704-0207</a>
+                        <a href="#" target="_blank" class="texto-icons">(91) 99999-9999</a>
                     </div>
                 </div>
                 <div class="col-4" id="footer-col3">
@@ -273,12 +284,6 @@
                         <div>
                             <i class="bi bi-arrow-right"></i>
                         </div>
-                        <a href="/planos" class="">Planos</a>
-                    </div>
-                    <div class="footer-links">
-                        <div>
-                            <i class="bi bi-arrow-right"></i>
-                        </div>
                         <a href="/contato" class="">Contato</a>
                     </div>
                     <div class="footer-links">
@@ -287,31 +292,13 @@
                         </div>
                         <a href="/politica_de_privacidade" class="">Política de privacidade</a>
                     </div>
-                    <div class="footer-links">
-                        <div>
-                            <i class="bi bi-arrow-right"></i>
-                        </div>
-                        <a target="_blank" href="/panfleto" class="">Panfleto digital</a>
-                    </div>
-                    <div class="footer-links">
-                        <div>
-                            <i class="bi bi-arrow-right"></i>
-                        </div>
-                        <a target="_blank" href="https://amostra1.fronteiradigital.com" class="">Amostra 1</a>
-                    </div>
-                    <div class="footer-links">
-                        <div>
-                            <i class="bi bi-arrow-right"></i>
-                        </div>
-                        <a target="_blank" href="https://amostra2.fronteiradigital.com" class="">Amostra 2</a>
-                    </div>
                 </div>
             </div>
             <div class="container-fluid" id="footer-linha">
 
             </div>
             <div class="row" id="footer-part2">
-                <p><i class="bi bi-c-circle"></i> Designed by Fronteira Digital, All Right Reserved</p>
+                <p><i class="bi bi-c-circle"></i> Designed by Fronteira Digital, All Rights Reserved</p>
             </div>
 
         </footer>
