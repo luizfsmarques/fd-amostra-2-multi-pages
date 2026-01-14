@@ -2,345 +2,99 @@ body{
     overflow-x: hidden;
 }
 
-/* 
+/*
     Navbar
 */
-.navbar{
-    height: 100px;
-    background-color: #FFFFFF;
+#navbar{
+    height: 70px;
+    background-color: #000000;
     box-shadow: 2px 2px 7px #DCDCDC;
     top: 0;
 }
 
 .vazio{
     width: 100%;
-    height: 100px;
+    height: 70px;
 }
 
 /* 
-    serviços
+    servicos
 */
-.titulo-pagina{
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+#servicos{
+    margin-top: 30px;
 }
 
-.titulo-pagina h1{
-    font-family: BeVietnamPro-bold;
-    color: #074058;
-    font-size: 2rem;
+#servicos h1, #servicos h2{
     text-align: center;
-}
-
-.titulo-pagina p{
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-.box-servico{
-    padding: unset;
-}
-
-.titulo-servico h2{
-    color: #074058;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    font-family: BeVietnamPro-bold;
-    font-size: 2rem;
-}
-
-.bi-arrow-right{
-    margin-right: 10px;
-}
-
-.box-img-texto{
-    width: 100%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-}
-
-.img-servico{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-}
-
-.img-servico img{
-    width: 90%;
-    height: 90%;
-}
-
-.texto-servico{
-    height: 300px;  
-}
-
-.texto-servico p{
-    height: 100%;
-    padding-top: 20px;
-    font-size: 1.1rem;
-}
-
-.faixa-promo{
-    width: 100%;
-    height: 100px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.faixa-promo img{
-    width: 100%;
-    height: 100%;
-}
-
-/* 
-    serviço software e Hardware
-*/
-
-.servico-principal{
-    padding: 2.5% 2.5%;
-}
-
-.servico-principal .row{
-    padding: 2.5% 2.5%;
-    box-shadow: 1px 1px 2px #25C9BA;
-    border-radius:10px;
-}
-
-.servico-principal .col-4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.servico-principal .col-8{
-    justify-content: center;
-    padding-right: 2.5%;
-}
-
-.subtitulo-servico-principal{
-    color: #074058;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    font-family: BeVietnamPro-bold;
-    font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.texto-servico-principal, .texto-servico-principal-amostras{
-    font-size: 1.1rem;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+#servicos h1{
+    font-family: BeVietnamPro-bold;
+    color: #000000;
+    font-size: 2rem;
 }
 
-.texto-servico-principal-amostras a{
-    color: #FF601A;
-}
-
-.texto-servico-principal-amostras a:hover{
-    font-size: 1.12rem;
-}
-
-.box-cards{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 70px;
+#servicos h2{
+    font-family: BeVietnamPro-medium;
+    font-size: 1.2rem;
     margin-bottom: 70px;
 }
 
-.card{
-    height: 430px;
-    box-shadow: 1px 1px 2px #25C9BA;
-}
-
-.card-software{
+#box-card-servicos{
     padding: unset;
-    margin-bottom: 20px;
-}
-
-.card-software .software-icon{
-    width: 100%;
-    height: 25%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.card-software .software-icon i{
-    font-size: 7rem;
-    color: #25C9BA;
+.card{
+    width: 25rem;
+    padding: 0 2.5% 2.5% 2.5%;
+    margin: auto;
 }
 
-.card-software .card-title{
-    margin-bottom: 15px;
-    font-size: 1rem;
-}
-
-.card-software .card-title, .card-software .card-text, .card-software .card-manutencao,
-.card-software .card-parcelas, .card-software .card-sem-juros{
-    text-align: center;
-    font-family: BeVietnamPro-medium;
-}
-
-.card-software .card-manutencao-pc{
-    visibility: hidden;
-}
-
-.card-software .card-preco{
-    text-align: center;
-    font-family: BeVietnamPro-medium;
-    font-size: 2rem;
-    position: relative;
-    bottom: 15px;
-    color: #FF601A;
-}
-
-.card-software .card-parcelas, .card-software .card-sem-juros{
-    font-size: 1rem;
-    margin: unset;
-    position: relative;
-    bottom: 20px;
-}
-
-.btn-card-servico{
-    all:unset;
-    text-decoration:unset;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: BeVietnamPro-medium;
-    box-sizing: border-box;
-    font-size: 1rem;
-    color: #FFFFFF;
-    background-color: #25C9BA;
-    border-radius: 5rem;
-    width:250px;
-    height: 60px;
-    position: relative;
-    bottom: 5px;
-}
-
-.btn-card-servico:hover{
-    cursor:pointer;
+.card-servicos:hover{
     scale: 1.01;
 }
 
-/* 
-    Serviços marketing
-*/
+.card-body{
+    padding: unset;
+}
 
-#planos_marketing{
+.card-servico-icon{
+    width: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: start;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
-.card-marketing{
-    padding: unset;
-    /*height: 970px;*/
-    height: 670px;
-    margin-bottom: 20px;
-}
-
-.card-marketing .marketing-icon{
-    width: 100%;
-    height: 170px;
+.card-servico-icon div{
+    width: 22%;
+    height: 80%;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #dcdcdc;
 }
 
-.card-marketing .marketing-icon i{
-    font-size: 7rem;
-    color: #25C9BA;
+.card-servico-icon div i{
+    font-size: 4rem;
 }
 
-.card-marketing .card-title{
-    position: relative;
-    bottom: 10px;
+.card-title,.card-text{
+    text-align: start;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
-.card-marketing .card-preco-original{
-    position: relative;
-    top: 12px;
-}
-
-.card-marketing .preco-original{
-    position: relative;
-    top: 0px;
-}
-
-.card-marketing .card-title, 
-.card-marketing .card-preco-original, 
-.card-marketing .preco-original, 
-.card-marketing .card-preco-promocao, 
-.card-marketing .preco-promocao{
-    text-align: center;
+.card-title{
     font-family: BeVietnamPro-medium;
-}
-
-.card-marketing .preco-original{
-    text-align: center;
-    font-family: BeVietnamPro-medium;
-    font-size: 1.5rem;
-    position: relative;
-    bottom: 20px;
-    color: #FF601A;
-    text-decoration: line-through;
-}
-
-.card-marketing .preco-promocao{
-    text-align: center;
-    font-family: BeVietnamPro-medium;
-    font-size: 2rem;
-    position: relative;
-    bottom: 20px;
-    color: #FF601A;
-}
-
-.bi-check{
-    font-size: 1.2rem;
-    color: #FF601A; 
-}
-
-.bi-exclamation-circle{
-    font-size: 1.2rem;
-    color: #FF601A; 
-}
-
-.bi-exclamation-circle:hover{
-    cursor:pointer;
-}
-
-.bi-x{
-    font-size: 1.2rem;
-}
-
-.itens{
-    margin-bottom: 50px;
-}
-
-/* 
-    Informações card serviços
-*/
-#social-info-basico,
-#conteudo-info-basico,
-#conteudo-info-premium{
-    background-color: #FFFFFF;
-    width: 350px;
-    box-shadow: 1px 1px 2px #DCDCDC;
-    padding: 15px 15px;
-    border-radius: 10px;
-    z-index: 100;
-    display: none;
-}
-
-#social-info-basico-resp,
-#conteudo-info-basico-resp,
-#conteudo-info-premium-resp{
-    display: none;
 }
 
 /*
@@ -353,16 +107,14 @@ body{
     background-repeat:no-repeat;
     background-size: cover;
     margin-top: 100px;
-}
-
-.cta-contato div{
-    padding-top: 10%;
-    padding-left: 5%;
-    padding-right: 40%;
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.cta-contato div{
+     width: 60%;
 }
 
 .cta-contato div h3{
@@ -384,9 +136,10 @@ body{
     font-size: 1rem;
     color: #FFFFFF;
     background-color: #FF601A;
-    border-radius: 5rem;
+    border-radius: 0rem;
     width:250px;
     height: 60px;
+    margin: auto;
 }
 
 .cta-contato div a:hover{
@@ -396,33 +149,75 @@ body{
 }
 
 /* 
-    FAQ
+    depoimentos
 */
-#box-accordion{
-    margin-top: 50px;
-    padding: 20px 20px;
+#depoimentos{
+    margin-top: 70px;
 }
 
-.titulo-faq{
-    font-family: BeVietnamPro-bold;
-    color: #074058;
-    font-size: 2rem;
+#depoimentos h1, #depoimentos h2{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-.accordion-item{
-    box-shadow: 1px 1px 3px #074058;
-    margin-bottom: 30px;
+#depoimentos h1{
+    font-family: BeVietnamPro-bold;
+    color: #000000;
+    font-size: 2rem;
 }
 
-.accordion-header,.accordion-button{
-    height: 100px;
+#depoimentos h2{
+    font-family: BeVietnamPro-medium;
+    font-size: 1.2rem;
+    margin-bottom: 70px;
 }
 
-.accordion-button{
+#box-card-depoimentos{
+    padding: unset;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    padding: 0 5%;
+}
+
+#box-card-depoimentos > :nth-child(even){
+    position: relative;
+    left: 20%;
+}
+
+.depoimento{
+    width: 80%;
+    box-shadow: 1px 1px 7px #DCDCDC;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 15px 40px;
+}
+
+.depoimento .img-empresa img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 8px #DCDCDC;
+    position: relative;
+    top: 30px;
+}
+
+.depoimento p{
+    padding: 0 10%;
+    font-family: BeVietnamPro-medium;
+}
+
+.depoimento a{
+    text-decoration: none;
     color: #074058;
 }
+
+.depoimento .nome{
+    color: #FF601A;
+    text-align: end;
+}
+
+
 
 
 @media screen and (max-width:1200px){
@@ -433,69 +228,15 @@ body{
     }
 
     /* 
-        serviços
+        servicos
     */
-
-    .servico-principal{
-        padding: 2.5% 2.5%;
-        margin-top: 25px;
+    
+    #box-card-servicos{
+        display: unset;
     }
 
-    .servico-principal .row{
-        padding: unset;
-        box-shadow: unset;
-        border-radius:unset;
-    }
-
-    .servico-principal .col-4{
-        margin-bottom: 25px;
-        width: 100%;
-    }
-
-    .servico-principal .col-8{
-        width: 100%;
-    }
-
-    .subtitulo-servico-principal,.texto-servico-principal,
-    .texto-servico-principal-amostras{
-        text-align: center;
-    }
-
-    .titulo-servico h2{
-        margin-bottom: 40px;
-    }
-
-    .box-img-texto{
-        width: 100%;
-        padding-left: 2.5%;
-        padding-right: 2.5%;
-    }
-
-    .img-servico{
-        width: 100%;
-        height: 300px;
-        margin-bottom: 40px;
-    }
-
-    .img-servico img{
-        width: 70%;
-        height: 100%;
-    }
-
-    .texto-servico{
-        width: 100%;
-        height: unset;  
-    }
-
-    /* 
-        Informações card serviços
-    */
-    #social-info-basico-resp,
-    #conteudo-info-basico-resp,
-    #conteudo-info-premium-resp{
-        display: inline-block;
-        padding: 0 5%;
-        
+    .card{
+        margin-bottom: 70px;
     }
 
     /*
@@ -517,6 +258,53 @@ body{
         font-size: 1.6rem;
     }
 
+    /* 
+        depoimentos
+    */
+
+    #box-card-depoimentos{
+        display: inline-block;
+        align-items: center;
+        width: 100%;
+        padding: 0 2.5%;
+    }
+
+    #box-card-depoimentos > :nth-child(even){
+        position: unset;
+        left: 0;
+    }
+
+    .depoimento{
+        width: 90%;
+        padding: 15px 40px;
+        margin: auto;
+        margin-bottom:40px;
+
+    }
+
+    .depoimento .img-empresa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .depoimento .img-empresa img{
+        width: 70px;
+        height: 70px;
+        position: unset;
+        top: 00px;
+    }
+
+    .depoimento p{
+        padding: 0 0.5%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .depoimento .nome{
+        text-align: center;
+    }
 
 }
 
@@ -525,52 +313,22 @@ body{
 
     .vazio{
         display: inline-block;
-        height: 100px;
+        height: 70px;
     }
 
-    /*
-        servicos
-    */
+
     
-    .titulo-servico h2{
-        font-size: 1.4rem;
-        padding-left: 5%;
-    }
-
-    .texto-servico p{
-        text-align: center;  
-    }
 }
 
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
 
-    /*
+    /* 
         servicos
     */
 
-    .titulo-servico h2{
-        font-size: 1.2rem;
-    }
-
-    .img-servico{
-        width: 100%;
-        height: 300px;
-        margin-bottom: 40px;
-    }
-
-    .img-servico img{
+    .card{
         width: 90%;
-        height: 100%;
-    }
-
-    .texto-servico{
-        width: 100%;
-        height: unset;  
-    }
-
-    .faixa-promo{
-        display: none;
     }
 
     /*
@@ -580,5 +338,5 @@ body{
     .cta-contato div h3{
         font-size: 1.3rem;
     }
-
+   
 }
