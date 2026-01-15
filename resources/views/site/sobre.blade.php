@@ -27,10 +27,10 @@
                     </p>
                     <div id="btns-sobre">
                         <div>
-                            <a id="btn-saiba-mais">Saiba mais</a>
+                            <a href="#ir-saiba-mais" id="btn-saiba-mais">Saiba mais</a>
                         </div>
                         <div>
-                            <a href="#contato" class="last-btn">Entre em contato</a>
+                            <a href="/contato" class="last-btn">Entre em contato</a>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
             Saiba mais   
         -->
 
-            <div class="container-fluid box-saiba-mais">
+            <div class="container-fluid box-saiba-mais" id="ir-saiba-mais">
 
                 <div class="row box-saiba-mais-aberto">
                     <h2>Um pouco da nossa história</h2>

@@ -55,10 +55,10 @@
                     </p>
                     <div id="btns-sobre">
                         <div>
-                            <a id="btn-saiba-mais">Saiba mais</a>
+                            <a href="/sobre" id="btn-saiba-mais">Saiba mais</a>
                         </div>
                         <div>
-                            <a href="#contato" class="last-btn">Entre em contato</a>
+                            <a href="/contato" class="last-btn">Entre em contato</a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
         <div class="container-fluid cta-contato" style="background-image: url({{asset('img/cta/cta.svg')}});"> 
             <div class="row">
                 <h3>Entre em contato conosco e vamos trilhar juntos essa nova jornada!</h3>
-                <a href="#contato">Entre em contato</a>
+                <a href="/contato">Entre em contato</a>
             </div>                
         </div>
 
@@ -203,7 +203,7 @@
         <div class="container-fluid cta-contato" style="background-image: url({{asset('img/cta/cta.svg')}});"> 
             <div class="row">
                 <h3>Entre em contato conosco e vamos trilhar juntos essa nova jornada!</h3>
-                <a href="#contato">Entre em contato</a>
+                <a href="/contato">Entre em contato</a>
             </div>                
         </div>
 
