@@ -2,11 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\InicioController;
-use App\Http\Controllers\LeadController;
-use App\Http\Controllers\LogController;
+use App\Http\Controllers\ContatoController;
 
 // site
 
@@ -29,6 +25,8 @@ Route::get('/planos', function (){
 Route::get('/contato', function (){
     return view('site/contato',['page'=>'contato']);
 });
+
+Route::post('/contato/enviar-contato', [ContatoController::class,'enviar_contato']);
 
 Route::get('/politica_de_privacidade', function (){
     return view('site/politica_privacidade',['page'=>'politica_privacidade']);

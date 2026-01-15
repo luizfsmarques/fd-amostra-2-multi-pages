@@ -33,7 +33,7 @@
         </div>
 
         <div class="container-fluid box-form">
-            <form class="row g-3" method="POST" action="#">
+            <form class="row g-3" method="POST" action="/contato/enviar-contato">
                 @csrf
                 <div class="col-md-6">
                     <input type="text" class="form-control" name="nome" value="{{old('nome')}}" placeholder="Seu nome" maxlength="200" id="nome" required>
