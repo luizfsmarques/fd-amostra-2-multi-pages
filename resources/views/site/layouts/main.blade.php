@@ -8,7 +8,7 @@
 
         <!-- <link rel="icon" href="{{ asset('img/marca/icon.ico') }}" type="image/x-icon"> -->
          <link rel="icon" href="{{ asset('img/marca/icon-geral-black.png') }}">
-        <title>Fronteira Digital</title>
+        <title>Multi Pages</title>
 
         <style>
              @font-face {
@@ -266,7 +266,7 @@
                         <div>
                             <i class="bi bi-arrow-right"></i>
                         </div>
-                        <a href="/" class="">Home</a>
+                        <a href="/" class="">Início</a>
                     </div>
                     <div class="footer-links">
                         <div>
