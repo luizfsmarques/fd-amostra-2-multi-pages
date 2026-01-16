@@ -17,11 +17,11 @@
         <meta name="robots" content="index, follow">
 
         <!-- Open Graph (Facebook, WhatsApp, etc) -->
-        <meta property="og:title" content="Fronteira Dgitial | Soluções Profissionais">
+        <meta property="og:title" content="Fronteira Digital | Soluções Profissionais">
         <meta property="og:description" content="Atendimento de qualidade e soluções que fazem sua empresa crescer.">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://www.fronteiradigital.com">
-        <!-- <meta property="og:image" content="https://www.seusite.com.br/imagem.jpg"> -->
+        <!-- <meta property="og:image" content="https://www.fronteiradigital.com/public/img/marca/marca-seo-whatsapp.png"> -->
 
         <!-- SEO para Google -->
         <!-- <meta name="google-site-verification" content="drGofh66g7t7PNHIAlPmUrM0tk1YiUppxJRDheliUI4"> -->
@@ -93,7 +93,7 @@
         </div>
         @endif
 
-        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
                     <img src="{{asset('img/marca/marca-site.svg')}}" alt="marca">

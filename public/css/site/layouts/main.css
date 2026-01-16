@@ -72,7 +72,7 @@ body{
 
 #navbar.rolagem{
     background-color: #000000;
-    box-shadow: 1px 1px 5px #DCDCDC;
+    border-bottom: 0.2px solid #DCDCDC;
     top: 0px;
 }
 
@@ -81,8 +81,8 @@ body{
 }
 
 .navbar-brand img{
-    width: 350px;
-    height: 50px;
+    width: 360px;
+    height: 60px;
 }
 
 .navbar-nav{
@@ -206,7 +206,7 @@ footer{
     #navbar{
         height: 70px;
         background-color: #000000;
-        box-shadow: 2px 2px 7px #DCDCDC;
+        border-bottom: 0.2px solid #DCDCDC;
         top: 0px;
         visibility: visible;
     }
@@ -219,8 +219,8 @@ footer{
     }
     
     .navbar-brand img{
-        width: 250px;
-        height: 40px;
+        width: 270px;
+        height: 50px;
     }
 
     .navbar-toggler{
